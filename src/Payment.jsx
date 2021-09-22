@@ -1,4 +1,5 @@
 
+import React from 'react'
 
 let Payment = ()=>{
     return <div>

@@ -1,4 +1,5 @@
 import { Redirect } from "react-router"
+import React from 'react'
 
 let Home = ()=>{
     return <div>
@@ -8,3 +9,5 @@ let Home = ()=>{
         {<Redirect to = "/calender"></Redirect>}
     </div>
 }
+
+export default Home;

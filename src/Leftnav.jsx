@@ -1,34 +1,36 @@
 
+import React from 'react'
 import {useState} from "react"
+import { Link } from 'react-router-dom';
 import "./CSS/Leftnav.css"
 
 let LeftNav = ()=>{
 
-const [isActive, setIsActive] = useState("node");
+const [isActive, setIsActive] = useState("cal");
 
         console.log(isActive);
     return <ul className="list-group col-2 me-2">
-  <li className={`list-group-item`} onClick = {()=>{
+  <Link to = "/"><li className={`list-group-item`} onClick = {()=>{
       setIsActive("all")
-  }}><b>Zendenta</b></li>
-  <li className={`list-group-item ${isActive === "over" ? "Active" : ""}`}onClick = {()=>{
+  }}><b>Zendenta</b></li></Link>
+  <Link to = "/overview"><li className={`list-group-item ${isActive === "over" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("over")
-  }}>Overview</li>
-  <li className={`list-group-item ${isActive === "cal" ? "Active" : ""}`}onClick = {()=>{
+  }}>Overview</li></Link>
+  <Link to = "/calender"><li className={`list-group-item ${isActive === "cal" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("cal")
-  }}>Calender</li>
-  <li className={`list-group-item ${isActive === "pat" ? "Active" : ""}`}onClick = {()=>{
+  }}>Calender</li></Link>
+  <Link to = "/patientlist"><li className={`list-group-item ${isActive === "pat" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("pat")
-  }}>Patient List</li>
-  <li className={`list-group-item ${isActive === "mes" ? "Active" : ""}`}onClick = {()=>{
+  }}>Patient List</li></Link>
+  <Link to = "/message"><li className={`list-group-item ${isActive === "mes" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("mes")
-  }}>Messages</li>
-  <li className={`list-group-item ${isActive === "pay" ? "Active" : ""}`}onClick = {()=>{
+  }}>Messages</li></Link>
+  <Link to = "/payment"><li className={`list-group-item ${isActive === "pay" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("pay")
-  }}>Payment Information</li>
-  <li className={`list-group-item ${isActive === "set" ? "Active" : ""}`}onClick = {()=>{
+  }}>Payment Information</li></Link>
+  <Link to = "/setting"><li className={`list-group-item ${isActive === "set" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("set")
-  }}>Settings</li>
+  }}>Settings</li></Link>
 </ul>
 }
 
