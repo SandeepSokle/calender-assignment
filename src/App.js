@@ -3,7 +3,7 @@ import LeftNav from "./Leftnav";
 import "./CSS/App.css"
 
 let App = ()=>{
-    return <div className = "app col-12 p-3">
+    return <div className = "app col-12">
         <LeftNav/>
         <Calender/>
     </div>

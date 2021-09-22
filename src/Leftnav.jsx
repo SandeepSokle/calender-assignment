@@ -7,7 +7,7 @@ let LeftNav = ()=>{
 const [isActive, setIsActive] = useState("node");
 
         console.log(isActive);
-    return <ul className="list-group col-2">
+    return <ul className="list-group col-2 me-2">
   <li className={`list-group-item`} onClick = {()=>{
       setIsActive("all")
   }}><b>Zendenta</b></li>
