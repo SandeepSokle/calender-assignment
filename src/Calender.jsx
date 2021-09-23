@@ -91,14 +91,14 @@ let Calender = () => {
                 placeholder="Search"
                 aria-label="Search"
                 onChange={(e) => {
-                  setSearchKey(e.currentTarget.value);
+                  // setSearchKey(e.currentTarget.value);
                 }}
               />
               <button
                 class="btn btn-outline-success me-4"
                 type="submit"
                 onClick={() => {
-                  setIsSearch(true);
+                  // setIsSearch(true);
                 }}
               >
                 Search
@@ -193,7 +193,7 @@ let Calender = () => {
         onClick={() => {
           setIsActivePatient(false);
           setIsApproval(false);
-          setIsSearch(false);
+          // setIsSearch(false);
         }}
       >
         Back
