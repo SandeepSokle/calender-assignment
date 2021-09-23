@@ -36,7 +36,7 @@ let App = () => {
             <Setting />
           </Route>
           <Route path="/addpatient">
-            <AddPatient/>
+            <AddPatient />
           </Route>
           <Route exact path="/">
             <Home />

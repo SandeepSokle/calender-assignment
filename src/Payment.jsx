@@ -1,11 +1,11 @@
+import React from "react";
 
-import React from 'react'
-
-let Payment = ()=>{
-    return <div>
-    <h1>Payment</h1>
-    
+let Payment = () => {
+  return (
+    <div>
+      <h1>Payment</h1>
     </div>
-}
+  );
+};
 
 export default Payment;

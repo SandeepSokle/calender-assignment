@@ -1,6 +1,9 @@
-import { ACCEPTAPPOINTMENT, ADDAPPOINTMENT, DELETEREQUEST, UPDATEAPPOINTMENT } from "./Constant";
-
-
+import {
+  ACCEPTAPPOINTMENT,
+  ADDAPPOINTMENT,
+  DELETEREQUEST,
+  UPDATEAPPOINTMENT,
+} from "./Constant";
 
 export const updateAppointmentAction = (payload) => {
   return {
@@ -12,11 +15,9 @@ export const updateAppointmentAction = (payload) => {
 export const addAppointmentAction = (payload) => {
   return {
     type: ADDAPPOINTMENT,
-    payload : payload
+    payload: payload,
   };
 };
-
-
 
 export const acceptAppointmentAction = (payload) => {
   return {

@@ -1,7 +1,4 @@
-
-
-import moment from 'moment';
-import React from 'react';
+import React from "react";
 
 export const events = [
   {
@@ -18,12 +15,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title: <div>
-      <h5>Dimas</h5>
-      <h6>Root Canol</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 19, 9, 0).toISOString()}</div>
-    </div>,
+    title: (
+      <div>
+        <h5>Dimas</h5>
+        <h6>Root Canol</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 19, 9, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 2,
@@ -39,12 +38,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title:<div>
-      <h5>Willy</h5>
-      <h6>scoling</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 19, 13, 0).toISOString()}</div>
-    </div>, 
+    title: (
+      <div>
+        <h5>Willy</h5>
+        <h6>scoling</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 19, 13, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 3,
@@ -60,13 +61,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title:<div>
-      <h5>Chandra</h5>
-      <h6>Consulation</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 20, 10, 0).toISOString()}</div>
-    </div>,
-    
+    title: (
+      <div>
+        <h5>Chandra</h5>
+        <h6>Consulation</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 20, 10, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 4,
@@ -82,12 +84,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title:<div>
-      <h5>Hendri</h5>
-      <h6>Wisdom teeth removal</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 21, 13, 0).toISOString()}</div>
-    </div>,
+    title: (
+      <div>
+        <h5>Hendri</h5>
+        <h6>Wisdom teeth removal</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 21, 13, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 5,
@@ -103,12 +107,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title:<div>
-      <h5>Rizal</h5>
-      <h6>Wisdom teeth removal</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 22, 9, 0).toISOString()}</div>
-    </div>,
+    title: (
+      <div>
+        <h5>Rizal</h5>
+        <h6>Wisdom teeth removal</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 22, 9, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 6,
@@ -124,12 +130,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title: <div>
-      <h5>Herman</h5>
-      <h6>Scaling</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 22, 12, 0).toISOString()}</div>
-    </div>,
+    title: (
+      <div>
+        <h5>Herman</h5>
+        <h6>Scaling</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 22, 12, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 7,
@@ -145,12 +153,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title: <div>
-      <h5>Danu</h5>
-      <h6>consulation</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 23, 10, 0).toISOString()}</div>
-    </div>,
+    title: (
+      <div>
+        <h5>Danu</h5>
+        <h6>consulation</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 23, 10, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 8,
@@ -166,12 +176,14 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title: <div>
-      <h5>Hendri</h5>
-      <h6>Bleoching</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 24, 13, 0).toISOString()}</div>
-    </div>, 
+    title: (
+      <div>
+        <h5>Hendri</h5>
+        <h6>Bleoching</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 24, 13, 0).toISOString()}</div>
+      </div>
+    ),
   },
   {
     id: 9,
@@ -187,13 +199,13 @@ export const events = [
     Note: "about patient",
     description: "This is a test description of an event",
     Mediciens: [`a`, `b`, `c`, `d`],
-    title: <div>
-      <h5>Hendri</h5>
-      <h6>Bleoching</h6>
-      <br></br>
-      <div>{new Date(2021, 8, 25, 10, 0).toISOString()}</div>
-    </div>, 
+    title: (
+      <div>
+        <h5>Hendri</h5>
+        <h6>Bleoching</h6>
+        <br></br>
+        <div>{new Date(2021, 8, 25, 10, 0).toISOString()}</div>
+      </div>
+    ),
   },
 ];
-
-

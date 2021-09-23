@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 
-
-let Overview = ()=>{
-    return <div>
-   <h1>Overview</h1>
+let Overview = () => {
+  return (
+    <div>
+      <h1>Overview</h1>
     </div>
-}
+  );
+};
 
 export default Overview;

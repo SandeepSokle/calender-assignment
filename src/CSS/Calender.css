@@ -1,74 +1,67 @@
-
-
-
-
-
 .red {
     color: red;
-cursor: pointer;
+    cursor: pointer;
 }
 
-.white{
+.white {
     color: white;
     cursor: pointer;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.activeDiv{
+.activeDiv {
     display: block;
     background-color: white;
     z-index: 2;
     height: 90vh;
     box-shadow: 0px 0px 10px 2px black;
-    margin: 20px!important;
+    margin: 20px !important;
     overflow: auto;
 }
 
-.calender{
+.calender {
     margin-right: 20px;
     overflow: hidden;
 }
 
 
-.activeDiv .singlePatient{
+.activeDiv .singlePatient {
     box-shadow: 0px 0px 10px 2px black;
 }
 
 
-.backBtn{
+.backBtn {
     position: fixed;
     top: 2rem;
     right: 5rem;
     z-index: 5;
 }
 
-.rbc-event-content{
+.rbc-event-content {
     overflow: auto;
     scrollbar-width: 1px;
 }
 
 .rbc-event-content::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .rbc-event-content {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.rbc-btn-group{
-display: flex;
-flex-direction: row;
+.rbc-btn-group {
+    display: flex;
+    flex-direction: row;
 }
 
-.rbc-addons-dnd-resizable{
-display: flex;
-flex-direction: column;
+.rbc-addons-dnd-resizable {
+    display: flex;
+    flex-direction: column;
 }
-
-
-
-

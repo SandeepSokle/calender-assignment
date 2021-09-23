@@ -1,18 +1,18 @@
-
-
-
-import { ACCEPTAPPOINTMENT, ADDAPPOINTMENT, DELETEREQUEST, UPDATEAPPOINTMENT } from "./Constant";
+import {
+  ACCEPTAPPOINTMENT,
+  ADDAPPOINTMENT,
+  DELETEREQUEST,
+  UPDATEAPPOINTMENT,
+} from "./Constant";
 import { events } from "./Data.jsx";
 
 let data = {
-  event : [...events],
-  sendRequest  : [],
-  counter : 0
-}
-
+  event: [...events],
+  sendRequest: [],
+  counter: 0,
+};
 
 export const Reducer = (state = data, action) => {
-
   if (action.type === UPDATEAPPOINTMENT) {
     let newdata = [...action.payload.data];
     state = {
@@ -44,7 +44,7 @@ export const Reducer = (state = data, action) => {
     let newReq = state.sendRequest.filter((e) => {
       return e.id !== action.payload.id;
     });
-   
+
     state = {
       event: state.event,
       sendRequest: newReq,
@@ -52,12 +52,7 @@ export const Reducer = (state = data, action) => {
     };
   }
 
-console.log(state);
+  console.log(state);
 
-
-   return state;
+  return state;
 };
-
-
-
-
