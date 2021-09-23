@@ -117,7 +117,7 @@ let AddPatient = ()=>{
         let stmt = start.split(":")[1];
         let endhr = end.split(":")[0];
         let endmt = end.split(":")[1];
-        
+
         if(new Date(year,month,day,sthr,stmt) < moment().toDate()){
             alert("Please Enter Valid Date:")
             return;
@@ -137,11 +137,12 @@ let AddPatient = ()=>{
     Note: note,
     description: des,
     Mediciens: [],
-    title: `
-        ${name}
-        ${des}
-        ${date}
-        `,
+    title: <div>
+      <h5>{name}</h5>
+      <h6>{des}</h6>
+      <br></br>
+      <div>{new Date(year,month,day,sthr,stmt).toISOString()}</div>
+    </div>,
     }
     
 // console.log("ID : "+moment().toDate().getTime());

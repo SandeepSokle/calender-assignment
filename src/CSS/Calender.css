@@ -46,7 +46,6 @@ cursor: pointer;
 }
 
 .rbc-event-content{
-    height: max-content;
     overflow: auto;
     scrollbar-width: 1px;
 }
@@ -63,6 +62,11 @@ cursor: pointer;
 .rbc-btn-group{
 display: flex;
 flex-direction: row;
+}
+
+.rbc-addons-dnd-resizable{
+display: flex;
+flex-direction: column;
 }
 
 
