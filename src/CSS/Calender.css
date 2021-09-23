@@ -5,10 +5,12 @@
 
 .red {
     color: red;
+cursor: pointer;
 }
 
 .white{
     color: white;
+    cursor: pointer;
 }
 
 .hide{
@@ -30,6 +32,7 @@
     overflow: hidden;
 }
 
+
 .activeDiv .singlePatient{
     box-shadow: 0px 0px 10px 2px black;
 }
@@ -44,8 +47,18 @@
 
 .rbc-event-content{
     height: max-content;
+    overflow: auto;
+    scrollbar-width: 1px;
 }
 
+.rbc-event-content::-webkit-scrollbar {
+  display: none;
+}
+
+.rbc-event-content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 .rbc-btn-group{
 display: flex;

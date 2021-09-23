@@ -103,19 +103,25 @@ let AddPatient = ()=>{
     // e.preventDefault();
     if(name === "" || age === 0 || phone === 0 || note === "" | des === "" || address === "" ||  date === null || start === null || end === null){ 
         alert("please fill all filled")
-        
+        return;
     }else{
+
         
         
         let newDate = date.split("-");
-    
-    let year = newDate[0];
-    let month = newDate[1]-1;
-    let day =newDate[2];
-    let sthr = start.split(":")[0];
-    let stmt = start.split(":")[1];
-    let endhr = end.split(":")[0];
-    let endmt = end.split(":")[1];
+        
+        let year = newDate[0];
+        let month = newDate[1]-1;
+        let day =newDate[2];
+        let sthr = start.split(":")[0];
+        let stmt = start.split(":")[1];
+        let endhr = end.split(":")[0];
+        let endmt = end.split(":")[1];
+        
+        if(new Date(year,month,day,sthr,stmt) < moment().toDate()){
+            alert("Please Enter Valid Date:")
+            return;
+        }
     
     let obj = {
         id: moment().toDate().getTime(),

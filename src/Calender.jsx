@@ -78,11 +78,11 @@ let appointmentRequest = useSelector((state)=>{
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid d-flex justify-content-between">
-    <span class="navbar-brand col-2">Calender</span>
+    <span class="navbar-brand col-2">Calendar</span>
    
       <form class="d-flex bd-highlight col-10" >
-        <Link class="nav-link active  col-2" to = "/addpatient">Add Paitent</Link>
-        <li class={`nav-link active col-3 ${appointmentRequest.length > 0 ? "red" : "white"}`} aria-current="page" onClick = {()=>{
+        <Link class="nav-link white col-2" to = "/addpatient">Add Patient</Link>
+        <li class={`nav-link col-3 ${appointmentRequest.length > 0 ? "red" : "white"}`} aria-current="page" onClick = {()=>{
           setIsApproval(true)
           setIsActivePatient(false)
         }}>{`Request Approval (${appointmentRequest.length})`}</li>
@@ -99,13 +99,13 @@ let appointmentRequest = useSelector((state)=>{
           selectable
           events={appointment}
           onEventDrop={eventDrop}
-          defaultView="month"
+          defaultView="week"
           defaultDate={moment().toDate()}
           localizer={localizer}
           onSelectEvent = {popupOfPatient}
           onDoubleClickEvent = {detailOfPatient}
           style={{ height: "88vh" }}
-          step={15}
+          step={30}
           timeslots={1}
           
         />
@@ -119,6 +119,7 @@ let appointmentRequest = useSelector((state)=>{
         {appointmentRequest.map((e)=>{
           return <div className = "singlePatient m-4 p-4">
             <div>
+              <div>{e.start.toISOString().substring(0,10)}</div>
               <h1>{e.basic_information.name}</h1>
               {e.description}
             </div>
@@ -138,14 +139,16 @@ let appointmentRequest = useSelector((state)=>{
       }
         
     </>:<>
-<div>
+<div className = "content p-5">
 {activePatient !== null ? <>
-<h1> {`Name :  ${activePatient.basic_information.name}`}</h1>
-<div>{`Date :  ${activePatient.start.toISOString().substring(0,10)}`}</div>
+<h4> {`Name :  ${activePatient.basic_information.name}`}</h4>
+<div>{`Date of Appointment :  ${activePatient.start.toISOString().substring(0,10)}`}</div>
+<div>{`UId of Patient :  ${activePatient.id}`}</div>
 <div>{`Age :  ${activePatient.basic_information.age}`}</div>
 <div>{`Email :  ${activePatient.basic_information.email}`}</div>
 <div>{`Phone :  ${activePatient.basic_information.phone}`}</div>
 <div>{`Address :  ${activePatient.basic_information.address}`}</div>
+<div>{`Description :  ${activePatient.description}`}</div>
  </>: "" }
  </div>
     </>

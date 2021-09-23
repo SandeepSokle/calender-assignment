@@ -11,14 +11,14 @@ const [isActive, setIsActive] = useState("cal");
         console.log(isActive);
     return <ul className="list-group col-2">
   <Link to = "/"><li className={`list-group-item`} onClick = {()=>{
-      setIsActive("all")
+      setIsActive("cal")
   }}><b>Zendenta</b></li></Link>
   <Link to = "/overview"><li className={`list-group-item ${isActive === "over" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("over")
   }}>Overview</li></Link>
   <Link to = "/calender"><li className={`list-group-item ${isActive === "cal" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("cal")
-  }}>Calender</li></Link>
+  }}>Calendar</li></Link>
   <Link to = "/patientlist"><li className={`list-group-item ${isActive === "pat" ? "Active" : ""}`}onClick = {()=>{
       setIsActive("pat")
   }}>Patient List</li></Link>
