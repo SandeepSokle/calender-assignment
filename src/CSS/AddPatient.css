@@ -1,0 +1,15 @@
+
+
+
+.addpatient *{
+    width: 100%;
+}
+button{
+    width: 40%;
+}
+
+.addpatient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

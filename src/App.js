@@ -9,6 +9,7 @@ import PatientList from "./PatientList";
 import Payment from "./Payment";
 import Setting from "./Setting";
 import Calender from "./Calender";
+import AddPatient from "./AddPatient";
 
 let App = () => {
   return (
@@ -33,6 +34,9 @@ let App = () => {
           </Route>
           <Route path="/setting">
             <Setting />
+          </Route>
+          <Route path="/addpatient">
+            <AddPatient/>
           </Route>
           <Route exact path="/">
             <Home />

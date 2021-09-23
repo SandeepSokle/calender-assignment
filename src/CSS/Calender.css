@@ -1,0 +1,57 @@
+
+
+
+
+
+.red {
+    color: red;
+}
+
+.white{
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.activeDiv{
+    display: block;
+    background-color: white;
+    z-index: 2;
+    height: 90vh;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px!important;
+    overflow: auto;
+}
+
+.calender{
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.activeDiv .singlePatient{
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+
+.backBtn{
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    z-index: 5;
+}
+
+.rbc-event-content{
+    height: max-content;
+}
+
+
+.rbc-btn-group{
+display: flex;
+flex-direction: row;
+}
+
+
+
+
